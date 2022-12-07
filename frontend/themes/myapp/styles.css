@@ -1,2 +1,103 @@
 @import url('./main-layout.css');
 @import url('line-awesome/dist/line-awesome/css/line-awesome.min.css');
+
+.div-login-page {
+    background-color: rgba(222, 222, 222, 0.5);
+}
+
+* {
+    font-family: "Ropa Sans", sans-serif;
+    font-size: 1rem;
+}
+
+.div-login-banner {
+    background-color: #CACACA;
+    border-radius: 5px;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+}
+
+.div-login-form {
+    background-color: #E0E0E0;
+    border-radius: 5px;
+    width: 35%;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.horizontal-layout-login-form {
+    display: block;
+    width: 100%;
+}
+
+.voto_image {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+}
+
+input {
+    height: 6vh !important;
+}
+
+.img_logo {
+    width: calc(99.9% - 15rem)!important;
+    max-width: 16rem;
+    align-self: center;
+}
+
+.layout_logo {
+    display: flex;
+}
+
+vaadin-button {
+    width: 100%;
+    height: 6vh !important;
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.logout-button {
+    padding: 5px;
+    margin: 5px;
+    height: 5vh !important;
+}
+
+.h-layout-login-create-count {
+    display: flex;
+    align-items: baseline;
+}
+
+@media only screen and (max-width: 768px) {
+    .div-login-banner {
+        background-color: #CACACA;
+        border-radius: 5px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .div-login-form {
+        background-color: #E0E0E0;
+        border-radius: 5px;
+        width: 50%;
+        display: flex !important;
+        align-items: center !important;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .div-login-banner {
+        display: none;
+    }
+
+    .div-login-form {
+        background-color: #E0E0E0;
+        border-radius: 5px;
+        width: 100%;
+        display: flex !important;
+        align-items: center !important;
+    }
+}
